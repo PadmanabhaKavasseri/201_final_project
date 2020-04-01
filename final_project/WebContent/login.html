@@ -3,10 +3,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>DiSCover-Login</title>
+<title>Login</title>
 </head>
 <body>
-<p><a href="index.html">Back to Home Page</a></p>
-<h1>Login Here!</h1>
+	<p><a href="index.html">Back to Home Page</a></p>
+	<h1>Login</h1>
+	<form name="login-form" method="get" action="LoginServlet">
+	<div>
+		<label for="username">Username:</label><br />
+		<input type="text" name="username" /><br />
+		<label for="password">Password:</label><br />
+		<input type="text" name="password" /><br />
+		<input type="submit" name="submit" value="submit" />
+	</div>
+	</form>
 </body>
 </html>
