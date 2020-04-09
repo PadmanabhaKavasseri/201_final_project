@@ -41,6 +41,6 @@ CREATE TABLE reservations (
 CREATE TABLE schedules (
     schedule_id INT(11) PRIMARY KEY AUTO_INCREMENT,
     user INT(11) NOT NULL,
-    schedule_date JSON NOT NULL,
+    schedule_data JSON NOT NULL,
     FOREIGN KEY fk1(user) REFERENCES users(user_id)
 );
